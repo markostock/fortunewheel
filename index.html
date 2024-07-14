@@ -2,62 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spin Wheel</title>
-
-    <!-- bs -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Lucky Spin App Example</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img
-            id="arrow"
-            class="arrow float"
-            src="./assets/7-comic-arrow-1.png"
-          />
-          <h4 class="instruct">
-            PRESS "SPACE" KEY TO SPIN THE WHEEL
-          </h4>
-          <button id="spin-btn" class="btn" onclick="spin()">
-            <img class="spin-btn" src="./assets/spin-n-win-logo.png" alt="" />
-          </button>
-
-          <div class="pop-up-content">
-            <h1>You Won!!</h1>
-            <p class="pop-up-para"></p>
-          </div>
+<div class="jquery-script-clear"></div>
+</div>
+    <div class="mainbox" id="mainbox">
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><b>Ei voittoa</b></span>
+          <span class="font span2"><b>Uusi pyöräytys</b></span>
+          <span class="font span3"><b>Ei voittoa</b></span>
+          <span class="font span4"><b>Mummo 5min</b></span>
+          <span class="font span5"><b>Low Sensitivity</b></span>
+          <!--5-->
+          <span class="font span6"><b>Uusi pyöräytys</b></span>
+          <span class="font span7"><b>Siveyskieli 5min</b></span>
+          <span class="font span8"><b>Ei voittoa</b></span>
+          <span class="font span9"><b>Englanti 5min</b></span>
+          <span class="font span10"><b>Päätä soolopeli</b></span> <!--ERIKOISPALKINTO-->
+          <!--10-->
         </div>
-        <div class="col">
-          <img class="pin" src="./assets/pin.png" alt="" />
-          <img id="spinner" class="shake" src="./assets/wheel.png" />
-          <img class="wheel-stand" src="./assets/stand.png" alt="" />
+        <div class="box2">
+          <span class="font span1"><b>Ei voittoa</b></span>
+          <span class="font span2"><b>100 transkryptoa</b></span>
+          <span class="font span3"><b>Ei voittoa</b></span>
+          <span class="font span4"><b>Reversed</b></span>
+          <span class="font span5"><b>Ei voittoa</b></span>
+          <!--15-->
+          <span class="font span6"><b>50 transkryptoa</b></span>
+          <span class="font span7"><b>200 transkryptoa</b></span>
+          <span class="font span8"><b>Ei voittoa</b></span>
+          <span class="font span9"><b>Näppäimistö</b></span>
+          <span class="font span10"><b>12H Striimi</b></span>
+          <!--20-->
         </div>
       </div>
+      <button class="spin" onclick="spin()">SPIN</button>
+      <button onClick="window.location.reload();" class="resetointi" style="margin-top: 20px; height: 50px;">RESET</button>
     </div>
+    <audio
+      controls="controls"
+      id="applause"
+      src="./bell.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="./wheel.mp3"
+      type="audio/mp3"
+    ></audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--SWEET ALERT 2-->
 
-    <!-- <div class="pop-up">
-      
-    </div> -->
+    <script src="script.js"></script>
+    <script type="text/javascript">
 
-    <script src="./app.js"></script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
   </body>
 </html>

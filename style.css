@@ -1,160 +1,382 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
 body {
-  background: url("./assets/back.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  font-family: Open Sans;
+  display: flex; /*flex alunperin */
+  justify-content: center;
+  align-items: center;
+  float: center;
+  /* height: 100vh; */
   overflow: hidden;
+  background: url();
+  background-size: 100% 100%;
 }
 
-.arrow {
-  transform: rotate(90deg);
-  width: 250px;
+/* Voitto tyyli */
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  font-family: Georgia, serif;
+  float: center;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
+}
+
+/*Slottiwheelin koko*/
+.mainbox {
+  position:sticky;
+  width: 863px; /*863px*/
+  height: 863px; /*863px*/
+}
+
+
+/* TICKER */
+.mainbox:after {
   position: absolute;
-  top: 90px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(timantti.png) no-repeat;
+  background-size: 10%;
+  left: 45%;
+  top: -7%;
+  transform: rotate(0deg);
 }
 
-#spin-btn {
-  background: transparent;
-}
-
-.float {
-  animation: float 1s infinite;
-}
-
-.col {
-  width: 50%;
-}
-
-.spin-btn {
-  height: 125px;
-}
-
-#spinner {
-  height: 500px;
+.box {
+  width: 100%;
+  height: 100%;
   position: relative;
-  /* display: none; */
-  z-index: 0;
-  /* left: 300px; */
+  border-radius: 50%;
+  border: 0px solid hsl(0, 0%, 100%);
+  overflow: hidden; /*Näyttää reunat, hidden or visible */
+  transition: all ease-in-out 5s;
+  transform: rotate(0deg); /*kääntää boksin, normaalisti 90 deg */
 }
 
-.pin {
-  height: 100px;
+span {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 10px #000000, 0 0 10px #000000;
 }
 
-.shake {
-  animation: shake 3s infinite;
+/* 1-5  BOX1*/
+
+.box1 .span1 {
+  clip-path: polygon(0 34%, 0 50%, 50% 50%);
+  background-color: rgb(255, 0, 0);
 }
+
+.box1 .span2 {
+  clip-path: polygon(0 34%, 8% 17%, 50% 50%);
+  background-color: rgb(255, 68, 0);
+}
+
+.box1 .span3 {
+  clip-path: polygon(8% 17%, 20% 7%, 50% 50%);
+  background-color: rgb(255, 132, 0);
+}
+
+.box1 .span4 {
+  clip-path: polygon(20% 7%, 35% 0, 50% 50%);
+  background-color: rgb(255, 208, 0);
+}
+
+.box1 .span5 {
+  clip-path: polygon(35% 0, 50% 0, 50% 50%);
+  background: #e1ff00;
+}
+
+/* 6-10  BOX1*/
+
+.box1 .span6 {
+  clip-path: polygon(50% 0, 65% 0, 50% 50%);
+  background: rgb(179, 255, 0);
+}
+
+.box1 .span7 {
+  clip-path: polygon(65% 0, 80% 7%, 50% 50%);
+  background: rgb(119, 255, 0);
+}
+
+.box1 .span8 {
+  clip-path: polygon(80% 7%, 100% 28%, 50% 50%);
+  background: rgb(0, 255, 128);
+}
+
+.box1 .span9 {
+  clip-path: polygon(100% 28%, 100% 49.1%, 50% 50%);
+  background: rgb(114, 250, 234);
+}
+
+.box1 .span10 { /*12H STREAM*/
+  clip-path: polygon(100% 49.1%, 100% 50%, 50% 50%);
+  background: rgb(255, 187, 0);
+}
+
+/* 11-20 BOX2 */
+
+
+.box2 .span1 {
+  clip-path: polygon(0 34%, 0 50%, 50% 50%);
+  background-color: #00ddff;
+}
+
+.box2 .span2 {
+  clip-path: polygon(0 34%, 8% 17%, 50% 50%);
+  background-color: #0091ff;
+}
+
+.box2 .span3 {
+  clip-path: polygon(8% 17%, 20% 7%, 50% 50%);
+  background-color: #0051ff;
+}
+
+.box2 .span4 {
+  clip-path: polygon(20% 7%, 35% 0, 50% 50%);
+  background: #3700ff;
+}
+
+.box2 .span5 {
+  clip-path: polygon(35% 0, 50% 0, 50% 50%);
+  background-color: #7300ff;
+}
+
+.box2 .span6 {
+  clip-path: polygon(50% 0, 65% 0, 50% 50%);
+  background-color: #9900ff;
+}
+
+.box2 .span7 {
+  clip-path: polygon(65% 0, 80% 7%, 50% 50%);
+  background-color: #cc00ff;
+}
+
+.box2 .span8 {
+  clip-path: polygon(80% 7%, 100% 28%, 50% 50%);
+  background-color: #f200ff;
+}
+
+.box2 .span9 {
+  clip-path: polygon(100% 28%, 100% 49.1%, 50% 50%);
+  background-color: #ff0099;
+}
+
+.box2 .span10 { /*PELIN VAIHTO*/
+  clip-path: polygon(100% 49.1%, 100% 50%, 50% 50%);
+  background: rgb(178, 178, 178);
+}
+
+.box2 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+/* BOX2 päättyy */
+
+.font {
+  font-size: 25px;
+}
+
+/* BOX 1 Tekstit */
+
+.box1 .span1 b {
+  position: absolute;
+  top: 42%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box1 .span2 b {
+  position: absolute;
+  top: 31%;
+  right: 72%;
+  transform: rotate(-152deg);
+}
+
+.box1 .span3 b {
+  position: absolute;
+  top: 20%;
+  right: 70%;
+  transform: rotate(-133deg);
+}
+
+.box1 .span4 b {
+  position: absolute;
+  top: 14%;
+  right: 57%;
+  transform: rotate(-115deg);
+}
+
+.box1 .span5 b {
+  position: absolute;
+  top: 12%;
+  right: 44%;
+  transform: rotate(-97deg);
+}
+
+.box1 .span6 b { 
+  position: absolute;
+  top: 13%;
+  right: 34%;
+  transform: rotate(-80deg);
+}
+
+.box1 .span7 b {
+  position: absolute;
+  top: 17%;
+  right: 24%;
+  transform: rotate(-63deg);
+}
+
+.box1 .span8 b {
+  position: absolute;
+  top: 24%;
+  right: 13%;
+  transform: rotate(-38deg);
+}
+
+.box1 .span9 b {
+  position: absolute;
+  top: 41%;
+  right: 4%;
+  transform: rotate(-10deg);
+}
+
+.box1 .span10 b { 
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  transform: rotate(-100deg);
+  color: transparent; /*12H STREAM  ERIKOISPALKINTO*/
+}
+
+/*BOX2 PALKINTOTEKSTIT */
+
+.box2 .span1 b {
+  position: absolute;
+  top: 42%;
+  right: 82%;
+  transform: rotate(189deg);
+}
+
+.box2 .span2 b {
+  position: absolute;
+  top: 32%;
+  right: 69%;
+  transform: rotate(-152deg);
+}
+
+.box2 .span3 b {
+  position: absolute;
+  top: 20%;
+  right: 70%;
+  transform: rotate(-133deg);
+}
+
+.box2 .span4 b {
+  position: absolute;
+  top: 13%;
+  right: 60%;
+  transform: rotate(-116deg);
+}
+
+.box2 .span5 b {
+  position: absolute;
+  top: 10%;
+  right: 49%;
+  transform: rotate(-99deg);
+}
+
+
+.box2 .span6 b { 
+  position: absolute;
+  top: 14%;
+  right: 35%;
+  transform: rotate(-84deg);
+}
+
+.box2 .span7 b {
+  position: absolute;
+  top: 18%;
+  right: 24%;
+  transform: rotate(-63deg);
+}
+
+.box2 .span8 b {
+  position: absolute;
+  top: 24%;
+  right: 14%;
+  transform: rotate(-38deg);
+}
+
+.box2 .span9 b {
+  position: absolute;
+  top: 40%;
+  right: 6%;
+  transform: rotate(-11deg);
+}
+
+.box2 .span10 b { 
+  position: absolute;
+  top: 30%;
+  right: 45%;
+  transform: rotate(-100deg);
+  color: transparent; /*KATSOJA PÄÄTTÄÄ PELIN HOPEA*/
+}
+
+/* SPIN */
 
 .spin {
-  animation: spin 15s infinite;
-}
-
-.pop-up-content {
-  color: #ffd81f;
-  background: rgb(233, 43, 64);
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
   position: absolute;
-  bottom: 5%;
-  font-family: "Abril Fatface", cursive;
-  display: none;
-  animation: enlarge 1s infinite;
-}
-
-.instruct {
-  color: rgb(255, 0, 0);
-  font-weight: bolder;
-  border: 0.5rem dotted #ffd81f;
-  background: rgba(255, 255, 255, 0.418);
-  padding: 0.5rem;
-  animation: enlarge 1s infinite;
-}
-
-.pop-up-content h1 {
-  font-size: 2rem;
-}
-
-.pop-up-para {
-  text-align: center;
-  font-size: 4rem;
-  border: 0.5rem dotted #ffd81f;
-}
-
-.wheel-stand {
-  position: absolute;
-  bottom: 5px;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
   height: 120px;
-  /* left: 30px; */
+  border-radius: 50%;
+  border: 6px solid white;
+  background: #ff22e2 url();
+  color: #fff;
+  box-shadow: 0 5px 20px #000;
+  font-weight: bold;
+  font-size: 34px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
-.col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+.spin:active {
+  width: 110px;
+  height: 110px;
+  font-size: 34px;
 }
 
-.container {
-  /* background: red; */
-  height: 100vh;
+.mainbox.animate:after {
+  animation: animateArrow 0.7s ease infinite;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0);
-  }
+audio {
+  display: none;
+}
+
+@keyframes animateArrow {
   50% {
-    transform: rotate(3600deg);
-  }
-
-  100% {
-    transform: rotate(90deg);
+    right: -50px;
   }
 }
 
-@keyframes float {
-  0% {
-    top: 70px;
-  }
-  50% {
-    top: 90px;
-  }
-  100% {
-    top: 70px;
-  }
-}
-
-@keyframes shake {
-  0% {
-    left: -5px;
-  }
-  25% {
-    left: 5px;
-  }
-  50% {
-    left: -5px;
-  }
-  75% {
-    left: 5px;
-  }
-
-  100% {
-    left: -5px;
-  }
-}
-
-@keyframes enlarge {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-
-  100% {
-    transform: scale(1);
+@media (max-width: 576px) {
+  .mainbox {
+    width: 100%;
+    height: 50%;
   }
 }
