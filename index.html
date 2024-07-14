@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Lucky Spin App Example</title>
+    <title>Fortune wheel</title>
     <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -42,7 +42,8 @@
           <!--20-->
         </div>
       </div>
-      <button class="spin" onclick="spin()">SPIN</button>
+     <!-- <button class="spin" onclick="spin()">SPIN</button>-->
+      <input type="image" class="spin" onclick="spin()" src="./spin.png"></input>
       <button onClick="window.location.reload();" class="resetointi" style="margin-top: 20px; height: 50px;">RESET</button>
     </div>
     <audio
@@ -51,6 +52,18 @@
       src="./bell.mp3"
       type="audio/mp3"
     ></audio>
+    <audio
+    controls="controls"
+    id="pikachu"
+    src="./pikachusound.mp3"
+    type="audio/mp3"
+  ></audio>
+  <audio
+  controls="controls"
+  id="squirtle"
+  src="./squirtlesound.mp3"
+  type="audio/mp3"
+></audio>
     <audio
       controls="controls"
       id="wheel"
