@@ -58,8 +58,12 @@ function spin() {
   // Random shape
   let Hasil = shuffle([
    
-    Eivoittoa1[0],
+//PÄÄPALKINNOT
+
     Soolopeli[0],
+    Striimi12h[0],
+//ALKUPERÄISET 18
+    Eivoittoa1[0],
     Näppäimistö1[0],
     Eivoittoa2[0],
     transkrypto200[0],
@@ -69,7 +73,6 @@ function spin() {
     Eivoittoa4[0],
     Transkrypto100[0],
     Eivoittoa5[0],
-    Striimi12h[0],
     Englanti5min[0],
     Eivoittoa6[0],
     Siveyskieli5min[0],
@@ -78,7 +81,31 @@ function spin() {
     Mummo5min[0],
     Eivoittoa7[0],
     Uusipyöräytys2[0],
-  ]);
+    
+// KOPIOIDUT 20
+
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
+
+]);
 
   // console.log(Hasil[0]);
 
