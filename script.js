@@ -181,7 +181,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
     pikachu.play();
     Swal.fire(
       {
-      imageUrl: "eivoittoa.png",+
+      imageUrl: "eivoittoa.png",
       imageHeight: 250,
       title: SelectedItem + "!",
       color: "white",
