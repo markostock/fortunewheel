@@ -32,7 +32,6 @@ function spin() {
   // let Sepeda = shuffle([2210]); //Possibility: 33% or 1/3
 
 //Millisekunnit alkureuna-päätyreuna
-//2212
 
     let Eivoittoa1 = shuffle([1873,	1874,	1875,	1876,	1877,	1878,	1879,	1880,	1881,	1882,	1883,	1884,	1885,	1886,	1887,	1888,	1889]);
     let Soolopeli = shuffle([1890.5]);
@@ -59,7 +58,8 @@ function spin() {
   let Hasil = shuffle([
    
 
-//VOITTOMAHDOLLISUUDET    
+//VOITTOMAHDOLLISUUDET 
+
 //PÄÄPALKINNOT
 
     Soolopeli[0],
@@ -152,7 +152,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
       perusvoitto.play();
       Swal.fire(
         {
-        imageUrl: "eivoittoa.png",
+        imageUrl: "eivoittoa.png", // PITÄÄ VAIHTAA
         imageHeight: 250,
         title: SelectedItem + "!",
         color: "white",
@@ -169,7 +169,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
       perusvoitto.play();
       Swal.fire(
         {
-        imageUrl: "eivoittoa.png",
+        imageUrl: "eivoittoa.png", //PITÄÄ VAIHTAA
         imageHeight: 250,
         title: SelectedItem + "!",
         color: "white",
@@ -333,7 +333,160 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
             transparent
             `
           })
+        }    
+//EI VOITTOA 5
+        if (Eivoittoa5.includes(Hasil[0])) {
+          eivoittoa.play();
+          Swal.fire(
+            {
+            imageUrl: "eivoittoa.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }    
+//ENGLANTI 5min
+        if (Englanti5min.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "englanti.gif",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
         }     
+//EI VOITTOA 6
+        if (Eivoittoa6.includes(Hasil[0])) {
+          eivoittoa.play();
+          Swal.fire(
+            {
+            imageUrl: "eivoittoa.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }     
+//Siveyskieli 5min
+        if (Siveyskieli5min.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "siveyskieli.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }     
+//Uusi pyöräytys 1
+        if (Uusipyöräytys1.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "uusi_pyoraytys.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }     
+//Low sensitivity
+        if (Lowsensitivity.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "lowsens.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }  
+//MUMMO 5min        
+        if (Mummo5min.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "mummo.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }  
+//EI VOITTOA 7
+        if (Eivoittoa7.includes(Hasil[0])) {
+          eivoittoa.play();
+          Swal.fire(
+            {
+            imageUrl: "eivoittoa.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }  
+//UUSI PYÖRÄYTYS 2        
+        if (Uusipyöräytys2.includes(Hasil[0])) {
+          perusvoitto.play();
+          Swal.fire(
+            {
+            imageUrl: "uusi_pyoraytys.png",
+            imageHeight: 250,
+            title: SelectedItem + "!",
+            color: "white",
+            confirmButtonColor: "#ff22e2",
+            background: "transparent",
+            showConfirmButton: false,
+            backdrop: `
+            transparent
+            `
+          })
+        }  
     /*
     pikachu.play();
     Swal.fire(
