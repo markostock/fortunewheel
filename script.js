@@ -294,7 +294,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
           perusvoitto.play();
           Swal.fire(
             {
-            imageUrl: "reversed.png",
+            imageUrl: "reversed_uno.png",
             imageHeight: 250,
             title: SelectedItem + "!",
             color: "white",
