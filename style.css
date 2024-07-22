@@ -54,7 +54,7 @@ body {
   border-radius: 50%;
   border: 0px solid hsl(0, 0%, 100%);
   overflow: hidden; /*Näyttää reunat, hidden or visible */
-  transition: all ease-in-out 5s;
+  /*transition: all ease-in-out 5s;*/
   transform: rotate(0deg); /*kääntää boksin, normaalisti 90 deg */
 }
 
