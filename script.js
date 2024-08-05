@@ -63,7 +63,7 @@ function spin() {
 //PÄÄPALKINNOT
 
 //    Soolopeli[0],
-    Striimi12h[0],
+/*    Striimi12h[0],
 //ALKUPERÄISET 18
 /*
     Eivoittoa1[0],
