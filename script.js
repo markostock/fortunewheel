@@ -44,7 +44,7 @@ function spin() {
     let Eivoittoa4 = shuffle([2012,	2013,	2014,	2015,	2016,	2017,	2018,	2019,	2020,	2021,	2022,	2023,	2024,	2025,	2026,	2027,	2028,	2029,	2030]);
     let Transkrypto100 = shuffle([2032,	2033,	2034,	2035,	2036,	2037,	2038,	2039,	2040,	2041,	2042,	2043,	2044,	2045,	2046,	2047,	2048,	2049,	2050,	2051]);
     let Eivoittoa5 = shuffle([2053,	2054,	2055,	2056,	2057,	2058,	2059,	2060,	2061,	2062,	2063,	2064,	2065,	2066,	2067,	2068,	2069]);
-    let Striimi12h = shuffle([2070.5]);
+    let Striimi24h = shuffle([2070.5]);
     let Englanti5min = shuffle([2072,	2073,	2074,	2075,	2076,	2077,	2078,	2079,	2080,	2081,	2082,	2083,	2084,	2085,	2086,	2087,	2088,	2089]);
     let Eivoittoa6 = shuffle([2091,	2092,	2093,	2094,	2095,	2096,	2097,	2098,	2099,	2100,	2101,	2102,	2103,	2104,	2105,	2106,	2107,	2108]);
     let Siveyskieli5min = shuffle([2110,	2111,	2112,	2113,	2114,	2115,	2116,	2117,	2118,	2119,	2120,	2121,	2122,	2123,	2124,	2125,	2126,	2127,	2128,	2129]);
@@ -63,9 +63,9 @@ function spin() {
 //PÄÄPALKINNOT
 
 //    Soolopeli[0],
-//    Striimi12h[0],
+    Striimi24h[0],
 //ALKUPERÄISET 18
-
+/*
     Eivoittoa1[0],
     Näppäimistö1[0],
     Eivoittoa2[0],
@@ -115,7 +115,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
 
 
 ]);
-
+*/
   // console.log(Hasil[0]);
 
   // Retrieve the value of the selected item
@@ -132,7 +132,7 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
   if (Eivoittoa4.includes(Hasil[0])) SelectedItem = "Ei voittoa";
   if (Transkrypto100.includes(Hasil[0])) SelectedItem = "100 transkryptoa";
   if (Eivoittoa5.includes(Hasil[0])) SelectedItem = "Ei voittoa";
-  if (Striimi12h.includes(Hasil[0])) SelectedItem = "12h Striimi";
+  if (Striimi24h.includes(Hasil[0])) SelectedItem = "24h Striimi";
   if (Englanti5min.includes(Hasil[0])) SelectedItem = "Englanti 5min";
   if (Eivoittoa6.includes(Hasil[0])) SelectedItem = "Ei voittoa";
   if (Siveyskieli5min.includes(Hasil[0])) SelectedItem = "Siveyskieli 5min";
@@ -153,12 +153,12 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
   // Raise an Alert
   setTimeout(function () {
 
-//12H STREAM
-    if (Striimi12h.includes(Hasil[0])) {
+//24H STREAM
+    if (Striimi24h.includes(Hasil[0])) {
       perusvoitto.play();
       Swal.fire(
         {
-        imageUrl: "eivoittoa.png", // PITÄÄ VAIHTAA
+        imageUrl: "24h.png",
         imageHeight: 250,
         title: SelectedItem + "!",
         color: "white",
