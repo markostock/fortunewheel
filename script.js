@@ -113,9 +113,9 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
 Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
 Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0],Eivoittoa3[0],Reversed1[0],Eivoittoa4[0],Transkrypto100[0],Eivoittoa5[0],Englanti5min[0],Eivoittoa6[0],Siveyskieli5min[0],Uusipyöräytys1[0],Lowsensitivity[0],Mummo5min[0],Eivoittoa7[0],Uusipyöräytys2[0],
 
-
-]);
 */
+]);
+
   // console.log(Hasil[0]);
 
   // Retrieve the value of the selected item
