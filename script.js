@@ -65,7 +65,7 @@ function spin() {
 //    Soolopeli[0],
     Striimi24h[0],
 //ALKUPERÄISET 18
-//
+    /*
     Eivoittoa1[0],
     Näppäimistö1[0],
     Eivoittoa2[0],
