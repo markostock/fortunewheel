@@ -33,6 +33,16 @@ body {
   height: 863px; /*863px*/
 }
 
+#resetointioikea {
+  margin-left: 100px;
+  height: 50px;
+}
+
+#resetointivasen {
+  margin-right: 100px;
+  height: 50px;
+}
+
 
 /* TICKER */
 .mainbox:after {

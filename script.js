@@ -170,8 +170,9 @@ Eivoittoa1[0],Näppäimistö1[0],Eivoittoa2[0],transkrypto200[0],transkrypto50[0
       perusvoitto.play();
       Swal.fire(
         {
-        imageUrl: "lahjakortti final.gif",
-        imageHeight: 820,
+        imageUrl: "lahjakortti.gif",
+        imageHeight: 863,
+        imageWidth: 863,
         // title: SelectedItem + "!",
         color: "white",
         confirmButtonColor: "#ff22e2",
