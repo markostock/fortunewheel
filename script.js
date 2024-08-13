@@ -63,7 +63,7 @@ function shuffle(array) {
   //PÄÄPALKINNOT
   
   //  Lahjakortti[0],
-     Striimi24h[0],
+  //  Striimi24h[0],
   //ALKUPERÄISET 18
       
       Eivoittoa1[0],
