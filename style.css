@@ -33,14 +33,23 @@ body {
   height: 863px; /*863px*/
 }
 
-#resetointioikea {
-  margin-left: 100px;
-  height: 50px;
+.sivunappulat {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10%;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  left: 5%;
+  border-radius: 25px;
+  border: 1px solid #d4d4d4;
 }
 
-#resetointivasen {
-  margin-right: 100px;
-  height: 50px;
+#resetointi {
+  top: 5%;
+  height: 40%;
+  background: rgb(114, 114, 114);
 }
 
 
