@@ -46,6 +46,31 @@ body {
   border: 1px solid #d4d4d4;
 }
 
+.oikeanappulat {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 10%;
+  color: white;
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: rgb(0, 0, 0) 2px 0 10px;
+  right: 5%;
+  border-radius: 25px;
+  border: 1px solid #d4d4d4;
+}
+
+#kultavoitto {
+  top: 5%;
+  height: 40%;
+  background: rgb(255, 187, 0);
+}
+
+#hopeavoitto {
+  top: 55%;
+  height: 40%;
+  background: rgb(178, 178, 178);
+}
+
 #resetointi {
   top: 5%;
   height: 40%;
@@ -193,7 +218,7 @@ span {
   background-color: #ff0099;
 }
 
-.box2 .span10 { /*PELIN VAIHTO*/
+.box2 .span10 { /*HOPEAVOITTO*/
   clip-path: polygon(100% 49.1%, 100% 50%, 50% 50%);
   background: rgb(178, 178, 178);
 }
@@ -370,11 +395,6 @@ span {
   z-index: 1000;
 }
 
-.spin:active {
-  width: 150px;
-  height: 150px;
-  font-size: 34px;
-}
 
 .mainbox.animate:after {
   animation: animateArrow 0.7s ease infinite;
