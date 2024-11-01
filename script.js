@@ -236,7 +236,7 @@ function hopeanappula() {
     if (Eivoittoa5.includes(Hasil[0])) SelectedItem = "Ei voittoa";
     if (Englanti5min.includes(Hasil[0])) SelectedItem = "Englanti 5min";
     if (Eivoittoa6.includes(Hasil[0])) SelectedItem = "Ei voittoa";
-    if (Siveyskieli5min.includes(Hasil[0])) SelectedItem = "Siveyskieli 5min";
+    if (Siveyskieli5min.includes(Hasil[0])) SelectedItem = "Nörttikieli 5min";
     if (Uusipyöräytys1.includes(Hasil[0])) SelectedItem = "Uusi pyöräytys";
     if (Lowsensitivity.includes(Hasil[0])) SelectedItem = "Low Sensitivity";
     if (Mummo5min.includes(Hasil[0])) SelectedItem = "Mummo 5min";
