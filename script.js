@@ -463,7 +463,7 @@ function hopeanappula() {
             perusvoitto.play();
             Swal.fire(
               {
-              imageUrl: "siveyskieli.png",
+              imageUrl: "norttikieli.png",
               imageHeight: 250,
               title: SelectedItem + "!",
               color: "white",
