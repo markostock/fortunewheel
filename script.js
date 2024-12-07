@@ -19,7 +19,7 @@ function shuffle(array) {
   }
 
   
-//24H STREAM
+//KULTAVOITTO
 
 function kultanappula() {
   wheel.play();
@@ -36,7 +36,7 @@ function kultanappula() {
 
   ]);
 
-  if (Striimi24h.includes(Hasil[0])) SelectedItem = "24h stream";
+  if (Striimi24h.includes(Hasil[0])) SelectedItem = "Päätä soolopeli";
 
       // Process
       box.style.setProperty("transition", "all ease 5s");
@@ -63,8 +63,8 @@ function kultanappula() {
     perusvoitto.play();
     Swal.fire(
       {
-      imageUrl: "24h.png",
-      imageHeight: 250,
+      imageUrl: "ohjain.png",
+      imageHeight: 350,
       title: SelectedItem + "!",
       color: "white",
       confirmButtonColor: "#ff22e2",
@@ -88,7 +88,7 @@ function kultanappula() {
 
 
 
-//LAHJAKORTTI
+//HOPEAVOITTO
 
 function hopeanappula() {
   wheel.play();
@@ -105,7 +105,7 @@ function hopeanappula() {
 
   ]);
 
-  if (Lahjakortti.includes(Hasil[0])) SelectedItem = "Lahjakortti";
+  if (Lahjakortti.includes(Hasil[0])) SelectedItem = "Päätä soolopeli";
 
       // Process
       box.style.setProperty("transition", "all ease 5s");
@@ -132,10 +132,9 @@ function hopeanappula() {
     perusvoitto.play();
     Swal.fire(
       {
-      imageUrl: "lahjakortti.gif",
-      imageHeight: 863,
-      imageWidth: 863,
-      // title: SelectedItem + "!",
+      imageUrl: "ohjain.png",
+      imageHeight: 350,
+      title: SelectedItem + "!",
       color: "white",
       confirmButtonColor: "#ff22e2",
       background: "transparent",
